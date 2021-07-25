@@ -90,7 +90,6 @@ def main():
     url = sys.argv[1]
 
     username = crack_username(url)
-    # print(f"{username}")
     password, session_cookie = crack_password(url, username)
 
     print(f"{username}:{password}")
